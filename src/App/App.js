@@ -156,7 +156,7 @@ function App() {
             <div className='vestimentaCont'>
               <div className='vestimentaMujer'>Vestido largo, queremos que estés hermosa pero también cómoda
                 (vamo' a darle hasta abajo)</div>
-              <div className='vestimentaHombre'>Traje sin corbata, tenes
+              <div className='vestimentaHombre'>Traje formal, tenes
                 que estar listo para darle
                 hasta el amanecer</div>
             </div>
@@ -212,7 +212,7 @@ function App() {
           <div className='codigoQR'></div>
         </div>
         <footer>
-          <div className='Domine' style={{ width: '24vw', justifyContent: 'center' }}>Diana & Sebas &nbsp;</div>
+          <div className='Domine' style={{ display:'flex', width: '24vw', justifyContent: 'center', alignItems: 'center' }}>Diana & Sebas &nbsp;</div>
           <div className='chapa'></div>
           <div className='vamoadarle'>#vamoadarlehastatumorrys</div>
         </footer>
