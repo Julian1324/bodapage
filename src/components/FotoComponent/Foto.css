@@ -1,0 +1,121 @@
+#fotoCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 300px;
+    /* top: 39vh; */
+    /* background-color: rgb(171, 119, 119); */
+    color: white;
+    /* position: absolute; */
+}
+
+.annoFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    font-family: Domine;
+    font-size: 1.3em;
+}
+
+.bordeFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+}
+
+.B2011{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2011B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2012{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2012B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2013{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2013B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2014{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2014B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2015{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2015B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2016{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2016B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2017{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2017B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2018{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2018B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.B2019{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2019B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.B2020{
+    width: 90%;
+    height: 90%;
+    background-image: url('../../assets/2020B.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
