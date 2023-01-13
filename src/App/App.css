@@ -656,7 +656,7 @@ header {
     width: 43vw;
     height: 80%;
     left: 13vw;
-    top: 12vh;
+    top: 11vh;
     position: relative;
     color: rgb(138, 100, 77);
 }
@@ -666,6 +666,7 @@ header {
     justify-content: center;
     font-family: adelia;
     font-size: 3.2vw;
+    line-height: 15vh;
 }
 
 .form{
