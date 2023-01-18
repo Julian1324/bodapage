@@ -3,32 +3,30 @@ import { Foto } from '../components/FotoComponent/Foto';
 import React from "react";
 import axios from "axios";
 import { CSVLink } from "react-csv";
+import { Slider } from '../components/Slider/Slider';
 
 function App() {
-  console.log(window.innerHeight);
-  console.log(window.innerWidth);
   const fotosHistoria = [2011, 2012, 2013, 2014, 2015];
   const fotosHistoria2 = [2016, 2017, 2018, 2019, 2020];
-  const baseURL = "https://bodaserver.onrender.com/";
-  const [csvData, setCsvData] = React.useState([["Nombre", "Confirma asistencia", "Numero de asistentes"]]);
-
-  const downloadCSV = async (e) => {
-    if (e.key !== '$') return;
-    setCsvData([["Nombre", "Confirma asistencia", "Numero de asistentes"]]);
-    try {
-      const res = await axios.get(`${baseURL}getDatabase`);
-      const splited = res.data.split(/\r\n|\r|\n/, -1);
-      splited.forEach(row => {
-        var arr = row.split(',');
-        setCsvData(oldArray => [...oldArray, [arr[0], arr[1], arr[2]]]);
-      });
-      setTimeout(() => {
-        
-        document.querySelector('.csvlink').click();
-      }, 1000);
-    } catch (error) {
-      console.log(error);
+  // const baseURL = "https://bodaserver.onrender.com/";
+  const baseURL = "http://localhost:3100/";
+  const [csvData, setCsvData] = React.useState([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
+  React.useEffect(() => {
+    console.log(csvData);
+    if(csvData.length>1){
+      document.querySelector('.csvlink').click();
+      setCsvData([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
     }
+  },[csvData]);
+  
+  const downloadCSV = (e) => {
+    if (e.key !== '$') return;
+    axios.get(`${baseURL}getDatabase`).then( (res)=>{
+      console.log(res.data);
+      res.data.forEach(d => {
+        setCsvData(oldArray => [...oldArray, d]);
+      });
+    } );
   }
 
   const onSubmit = async (e) => {
@@ -39,16 +37,15 @@ function App() {
     try {
       if (!!!confirmBox.selectedIndex || !!!numAsisBox.selectedIndex) return alert('Por favor confirma asistencia o número de asistentes');
       if (!!!nameInput) return alert('Digita tu nombre por favor');
-      // console.log(confirmBox.options[confirmBox.selectedIndex].text);
       const post = {
-        name: nameInput,
-        confirm: confirmBox.options[confirmBox.selectedIndex].text,
-        numAsis: numAsisBox.options[numAsisBox.selectedIndex].text
+        nombre: nameInput,
+        confirma_asistencia: confirmBox.options[confirmBox.selectedIndex].text,
+        numero_asistentes: numAsisBox.options[numAsisBox.selectedIndex].text
       }
       const res = await axios.post(`${baseURL}saveAsis`, post);
       console.log(res.status);
       if (res.status === 200) {
-        setCsvData([["Nombre", "Confirma asistencia", "Numero de asistentes"]]);
+        setCsvData([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
         alert('Tu confirmación se ha enviado con éxito.');
       }
 
@@ -57,6 +54,7 @@ function App() {
     }
 
   }
+
 
   return (
     <div id='backCont'>
@@ -74,23 +72,31 @@ function App() {
       <div id='sec2'>
         <div className='nuestraHistoria'>Nuestra historia</div>
         <div className='backHistoria1'></div>
-        {/* <Foto anno={2011} foto={'B2011'}/> */}
-        <div className='fotoCont'>
+
+        {(window.innerWidth <= 414) && <div className='carousel'><Slider array1={fotosHistoria}></Slider></div>}
+        {(window.innerWidth > 414) && <div className='fotoCont'>
           {fotosHistoria.map((f) => {
             return <Foto anno={f} foto={`B${f}`} key={f} />
           })}
-        </div>
+        </div>}
         <div className='backWhite'>
           <div className='leftText'>No fue amor a primera vista, pero estaba destinado. Nos conocimos en el 2009 en el cumpleaños de Isa, teníamos 14 y 15 años, y desde ahí sabíamos que algo se estaba horneando. Nos ennoviamos en el 2012, y desde ese momento hemos compartido muchas aventuras juntos.</div>
           <div className='trigo'></div>
           <div className='rightText'>Relación a distancia, momentos felices, momentos duros en nuestras vidas, pero siempre con la seguridad de que lo nuestro duraría. Han pasado casi 14 años desde que nos conocimos, y ya se acerca el día de nuestro matrimonio
             ¡Gracias por hacer parte de esta historia de amor!</div>
         </div>
-        <div className='fotoCont2'>
+        {(window.innerWidth <= 414) && <div className='carousel2'><Slider array2={fotosHistoria2}></Slider></div>}
+        {(window.innerWidth > 414) && <div className='fotoCont2'>
           {fotosHistoria2.map((f) => {
             return <Foto anno2={f} foto={`B${f}`} key={f} />
           })}
-        </div>
+        </div>}
+
+        {/* <div className='fotoCont2'>
+          {fotosHistoria2.map((f) => {
+            return <Foto anno2={f} foto={`B${f}`} key={f} />
+          })}
+        </div> */}
         <div className='backHistoria2'></div>
         <div className='backHistoria3'>
           <div className='annoCollage'>
@@ -106,7 +112,7 @@ function App() {
             <div className='photoC2'></div>
           </div>
           <div className='DSCont'>
-            <div className='chapa' style={{ width: '100px', height: '100px', marginBottom: '6vh' }}></div>
+            <div className='chapa2' style={{ width: '100px', height: '100px', marginBottom: '6vh' }}></div>
             <div className='hashtags'>
               <div>#dianaypollo</div>
               <div>#vamoadarlehastatumorrys</div>
@@ -212,8 +218,8 @@ function App() {
           <div className='codigoQR'></div>
         </div>
         <footer>
-          <div className='Domine' style={{ display:'flex', width: '24vw', justifyContent: 'center', alignItems: 'center' }}>Diana & Sebas &nbsp;</div>
-          <div className='chapa'></div>
+          <div className='Domine3' style={{ display: 'flex', width: '24vw', justifyContent: 'center', alignItems: 'center' }}>Diana & Sebas &nbsp;</div>
+          <div className='chapa3'></div>
           <div className='vamoadarle'>#vamoadarlehastatumorrys</div>
         </footer>
       </div>

@@ -8,7 +8,7 @@
     src: url('../assets/adelia.ttf');
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -20,8 +20,8 @@ header {
     background-color: rgb(167, 77, 77);
 }
 
-#backCont{
-    height: auto;
+#backCont {
+    /* height: 50vh; */
 }
 
 .divColor {
@@ -49,6 +49,20 @@ header {
     z-index: 1;
 }
 
+.chapa2 {
+    background-image: url('../assets/Recurso\ 1.png');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.chapa3 {
+    background-image: url('../assets/Recurso\ 1.png');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
 #sec1 {
     height: 96vh;
     width: 100%;
@@ -69,8 +83,18 @@ header {
     background-color: white;
 } */
 
-.Domine{
+.Domine {
     display: flex;
+    font-family: Domine;
+    font-size: 1.9vw;
+    z-index: 1;
+    letter-spacing: 0.3em;
+    color: rgb(74, 60, 37);
+}
+
+.Domine3 {
+    display: flex;
+    height: 3vh;
     font-family: Domine;
     font-size: 1.9vw;
     z-index: 1;
@@ -91,14 +115,14 @@ header {
     font-size: 5vw;
 }
 
-#sec2{
+#sec2 {
     height: auto;
     /* background-color: red; */
     position: relative;
     bottom: 11.7vh;
 }
 
-.nuestraHistoria{
+.nuestraHistoria {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,12 +135,12 @@ header {
     color: rgb(111, 68, 50);
 }
 
-.backHistoria1{
+.backHistoria1 {
     height: 27vh;
     background-image: url('../assets/Recurso\ 11.png');
 }
 
-.fotoCont{
+.fotoCont {
     display: flex;
     width: 100%;
     height: auto;
@@ -126,7 +150,7 @@ header {
     position: absolute;
 }
 
-.backWhite{
+.backWhite {
     display: flex;
     justify-content: space-around;
     padding-top: 17vh;
@@ -135,7 +159,7 @@ header {
     background-color: white;
 }
 
-.leftText{
+.leftText {
     /* padding: 0.5vw; */
     width: 43vw;
     height: 15vh;
@@ -144,7 +168,7 @@ header {
     text-align: justify;
 }
 
-.trigo{
+.trigo {
     width: 2vw;
     height: 14vh;
     background-image: url('../assets/Recurso\ 13.png');
@@ -152,7 +176,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.rightText{
+.rightText {
     /* padding: 0.5vw; */
     width: 43vw;
     height: 15vh;
@@ -161,7 +185,7 @@ header {
     text-align: justify;
 }
 
-.fotoCont2{
+.fotoCont2 {
     display: flex;
     width: 100%;
     height: auto;
@@ -171,14 +195,14 @@ header {
     position: absolute;
 }
 
-.backHistoria2{
+.backHistoria2 {
     height: 27vh;
     background-image: url('../assets/Recurso\ 12.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.backHistoria3{
+.backHistoria3 {
     display: flex;
     justify-content: flex-end;
     padding: 3vh 0 0 3vh;
@@ -187,7 +211,7 @@ header {
     background-color: white;
 }
 
-.annoCollage{
+.annoCollage {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +225,7 @@ header {
     font-family: Domine;
 }
 
-.miniTrigo{
+.miniTrigo {
     width: 2vw;
     height: 100%;
     background-image: url('../assets/Recurso\ 30.png');
@@ -210,7 +234,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.trigoDec{
+.trigoDec {
     width: 11vw;
     height: 27vh;
     left: 39vw;
@@ -222,14 +246,14 @@ header {
     position: absolute;
 }
 
-.collage{
+.collage {
     display: flex;
     justify-content: space-around;
     width: 70vw;
     height: 95%;
 }
 
-.photoC1{
+.photoC1 {
     width: 32%;
     height: 100%;
     background-image: url('../assets/2021B.png');
@@ -238,7 +262,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.contPhotos{
+.contPhotos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +270,7 @@ header {
     height: 100%;
 }
 
-.photoC2{
+.photoC2 {
     width: 32%;
     height: 100%;
     background-image: url('../assets/BYN\ FOTO\ 1.png');
@@ -254,7 +278,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.photoC3{
+.photoC3 {
     width: 100%;
     height: 48%;
     background-image: url('../assets/fOTO\ 3\ BYN.png');
@@ -263,7 +287,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.photoC4{
+.photoC4 {
     width: 100%;
     height: 48%;
     background-image: url('../assets/BYN\ 2.png');
@@ -272,7 +296,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.DSCont{
+.DSCont {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -281,7 +305,7 @@ header {
     height: 95%;
 }
 
-.backFlores{
+.backFlores {
     width: 15vw;
     height: 100%;
     background-image: url('../assets/Recurso\ 15.png');
@@ -290,16 +314,17 @@ header {
     background-position: bottom;
 }
 
-.hashtags{
+.hashtags {
     font-family: Domine;
     color: rgb(116, 77, 60);
+    font-size: 1.1vw;
 }
 
-#sec3{
+#sec3 {
     height: auto;
 }
 
-.cartelCelebremos{
+.cartelCelebremos {
     display: flex;
     flex-direction: column;
     width: 57.5vw;
@@ -310,7 +335,7 @@ header {
     z-index: 2;
 }
 
-.celebremos{
+.celebremos {
     height: 100vh;
     width: 100%;
     bottom: 11.5vh;
@@ -320,7 +345,7 @@ header {
     z-index: 1;
 }
 
-.tituloCartel{
+.tituloCartel {
     display: flex;
     margin-top: 5vh;
     align-items: center;
@@ -332,7 +357,7 @@ header {
     color: rgb(97, 61, 45);
 }
 
-.cartelCont{
+.cartelCont {
     display: flex;
     margin-top: 5vh;
     justify-content: space-between;
@@ -344,7 +369,7 @@ header {
     /* background-color: blue; */
 }
 
-.fecha{
+.fecha {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -354,7 +379,7 @@ header {
     height: 100%;
 }
 
-.trigoCartel{
+.trigoCartel {
     width: 6%;
     height: 100%;
     /* background-color: red; */
@@ -363,7 +388,7 @@ header {
     background-size: 70% 70%;
 }
 
-.locationCartel{
+.locationCartel {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -374,7 +399,7 @@ header {
     /* background-color: aqua; */
 }
 
-.comoLlegarHeader{
+.comoLlegarHeader {
     width: 100%;
     height: 22vh;
     background-image: url('../assets/Recurso\ 43.png');
@@ -383,7 +408,7 @@ header {
     background-size: cover;
 }
 
-.comoLlegarBack{
+.comoLlegarBack {
     width: 100%;
     height: 85vh;
     background-image: url('../assets/Recurso\ 31.png');
@@ -394,7 +419,7 @@ header {
     font-family: adelia;
 }
 
-.titleComoLlegar{
+.titleComoLlegar {
     display: flex;
     align-items: center;
     line-height: 10vh;
@@ -408,10 +433,7 @@ header {
     color: rgb(110, 68, 50);
 }
 
-.titleFinca{
-    /* display: flex; */
-    /* width: 100%; */
-    /* justify-content: center; */
+.titleFinca {
     font-family: Domine;
     color: rgb(110, 68, 50);
     left: 59vw;
@@ -419,7 +441,7 @@ header {
     position: absolute;
 }
 
-.videoComoLlegar{
+.videoComoLlegar {
     top: 15vh;
     right: 7vw;
     width: 55vw;
@@ -428,16 +450,17 @@ header {
     position: absolute;
 }
 
-.location{
+.location {
     text-align: center;
-    width: 37vw;
+    width: 47vw;
     margin-top: 45vh;
-    margin-left: 45vw;
+    margin-left: 41vw;
     font-family: Domine;
     color: rgb(110, 68, 50);
+    text-align: justify;
 }
 
-#sec4{
+#sec4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,12 +472,12 @@ header {
     background-size: cover;
 }
 
-.mapa{
+.mapa {
     width: 70%;
     height: 70vh;
 }
 
-.grandiaHeader{
+.grandiaHeader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -469,7 +492,7 @@ header {
     position: relative;
 }
 
-.grandiaBack{
+.grandiaBack {
     height: 90vh;
     width: 100%;
     background-image: url('../assets/Recurso\ 32.png');
@@ -478,7 +501,7 @@ header {
     bottom: 12vh;
 }
 
-.parejaCont{
+.parejaCont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,7 +513,7 @@ header {
     position: absolute;
 }
 
-.parejaImg{
+.parejaImg {
     width: 87%;
     height: 80%;
     background-image: url('../assets/Recurso\ 33.png');
@@ -498,26 +521,26 @@ header {
     background-repeat: no-repeat;
 }
 
-.vestimentaCont{
+.vestimentaCont {
     display: flex;
     justify-content: space-between;
     color: rgb(110, 68, 50);
     font-family: Domine;
 }
 
-.vestimentaMujer{
+.vestimentaMujer {
     width: 51%;
     text-align: justify;
     font-size: 1.3vw;
 }
 
-.vestimentaHombre{
+.vestimentaHombre {
     width: 40%;
     text-align: justify;
     font-size: 1.3vw;
 }
 
-#brillarCont{
+#brillarCont {
     display: flex;
     align-items: center;
     width: 28vw;
@@ -529,7 +552,7 @@ header {
     top: 2vh;
 }
 
-.brillar{
+.brillar {
     display: flex;
     align-items: center;
     height: 6vh;
@@ -538,13 +561,13 @@ header {
     font-size: 1.37vw;
 }
 
-.recuerda{
+.recuerda {
     text-align: center;
     color: rgb(83, 70, 47);
     font-size: 1.37vw;
 }
 
-.ojo{
+.ojo {
     /* margin-top: 5vh; */
     top: 5vh;
     margin-left: 2vw;
@@ -554,7 +577,7 @@ header {
     position: relative;
 }
 
-.coloresRestrigidos{
+.coloresRestrigidos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -568,7 +591,7 @@ header {
     font-size: 1.38vw;
 }
 
-.mujeres{
+.mujeres {
     display: flex;
     top: 13vh;
     margin-left: 2vw;
@@ -580,7 +603,7 @@ header {
     font-size: 1.3vw;
 }
 
-.hombres{
+.hombres {
     display: flex;
     margin-left: 2vw;
     top: 14vh;
@@ -592,7 +615,7 @@ header {
     font-size: 1.3vw;
 }
 
-.recomendaciones{
+.recomendaciones {
     display: flex;
     top: 17vh;
     position: relative;
@@ -606,7 +629,7 @@ header {
     font-size: 1.38vw;
 }
 
-.evitarZapatos{
+.evitarZapatos {
     display: flex;
     width: 24vw;
     height: 24vh;
@@ -619,7 +642,7 @@ header {
     font-size: 1.3vw;
 }
 
-#sec6{
+#sec6 {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -628,7 +651,7 @@ header {
     bottom: 12vh;
 }
 
-.sec6Back{
+.sec6Back {
     width: 42vw;
     height: 94vh;
     top: 6vh;
@@ -640,7 +663,7 @@ header {
     z-index: 0;
 }
 
-.izq{
+.izq {
     /* margin-top: 5vh; */
     top: 8vh;
     left: 5vw;
@@ -652,7 +675,7 @@ header {
     background-size: 100% 100%;
 }
 
-.der{
+.der {
     width: 43vw;
     height: 80%;
     left: 13vw;
@@ -661,7 +684,7 @@ header {
     color: rgb(138, 100, 77);
 }
 
-.tituloAcompanas{
+.tituloAcompanas {
     display: flex;
     justify-content: center;
     font-family: adelia;
@@ -669,7 +692,7 @@ header {
     line-height: 9vh;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -678,7 +701,7 @@ header {
     height: 53vh;
 }
 
-.divForm{
+.divForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -688,39 +711,39 @@ header {
     background-color: rgb(255, 255, 255);
     border-radius: 1vw;
     font-family: Domine;
-    box-shadow: 0px 0px 60px -11px rgba(0,0,0,0.69);
+    box-shadow: 0px 0px 60px -11px rgba(0, 0, 0, 0.69);
 }
 
-.titleNombre{
+.titleNombre {
     display: flex;
     align-items: center;
     font-size: 1.5vw;
     height: 9vh;
 }
 
-.inputConfirm{
+.inputConfirm {
     height: 3.5vh;
     width: 80%;
     border-radius: 0.5vw;
-    border: 1px solid rgba(60, 44, 24, 0.561);;
+    border: 1px solid rgba(60, 44, 24, 0.561);
     font-family: Domine;
     margin-bottom: 2vh;
     color: rgb(60, 44, 24);
 }
 
-#confirmacion{
+#confirmacion {
     height: 3.5vh;
     width: 80%;
     margin-bottom: 2vh;
 }
 
-#asistencia{
+#asistencia {
     height: 3.5vh;
     width: 80%;
     margin-bottom: 2vh;
 }
 
-.confirmaAsis{
+.confirmaAsis {
     display: flex;
     justify-content: center;
     width: auto;
@@ -729,7 +752,7 @@ header {
     text-align: justify;
 }
 
-#sec7{
+#sec7 {
     width: 100%;
     height: 100vh;
     background-color: rgb(242, 240, 235);
@@ -740,7 +763,7 @@ header {
     background-size: cover;
 }
 
-.tituloObsequios{
+.tituloObsequios {
     display: flex;
     top: 17vh;
     position: relative;
@@ -748,14 +771,14 @@ header {
     align-items: center;
     width: 18vw;
     height: 6vh;
-    background-color: rgb(110,68,51);
+    background-color: rgb(110, 68, 51);
     color: white;
     font-family: Domine;
     font-size: 1.87vw;
     font-weight: bold;
 }
 
-.obsequioText{
+.obsequioText {
     display: flex;
     top: 30vh;
     /* left: -5vw; */
@@ -764,18 +787,18 @@ header {
     font-family: Domine;
     font-size: 1.6vw;
     text-align: justify;
-    color: rgb(116,76,59);
+    color: rgb(116, 76, 59);
     position: relative;
 }
 
-.obsequioCont{
+.obsequioCont {
     display: flex;
     width: 100%;
     height: 80vh;
     justify-content: space-around;
 }
 
-.codigoQR{
+.codigoQR {
     width: 20vw;
     height: 43vh;
     top: 21vh;
@@ -787,7 +810,7 @@ header {
     background-size: 100% 100%;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -800,7 +823,7 @@ footer{
     background-repeat: no-repeat;
 }
 
-.vamoadarle{
+.vamoadarle {
     /* width: 20vw; */
     font-family: Domine;
     font-size: 1.87vw;
@@ -808,67 +831,67 @@ footer{
     letter-spacing: 0.1em;
 }
 
-.okButton{
+.okButton {
     width: 5vw;
     height: 4vh;
 }
 
-.csvlink{
+.csvlink {
     color: rgba(245, 245, 220, 0);
 }
 
 @media (max-height: 670px) {
 
-    .backHistoria1{
+    .backHistoria1 {
         /* height: 27vh; */
         height: 35vh;
         background-image: url('../assets/Recurso\ 11.png');
     }
 
-    .backHistoria2{
+    .backHistoria2 {
         height: 35vh;
     }
 
-    .fotoCont2{
+    .fotoCont2 {
         top: 101vh;
     }
 
-    .cartelCelebremos{
+    .cartelCelebremos {
         bottom: -20.5vh;
     }
 
-    .comoLlegarHeader{
+    .comoLlegarHeader {
         height: 27vh;
     }
 
 }
 
 @media (max-width: 1300px) {
-    .der{
+    .der {
         top: 5vh;
     }
 
-    .tituloAcompanas{
+    .tituloAcompanas {
         height: 26vh;
     }
 
-    .backHistoria2{
+    .backHistoria2 {
         height: 38vh;
     }
 
-    footer{
+    footer {
         height: 23vh;
         bottom: -12vh;
     }
 
-    .form{
+    .form {
         height: 50vh;
     }
 }
 
 @media (max-width: 1176px) {
 
-    .comoLlegarHeader{
+    .comoLlegarHeader {
         width: 100%;
         height: 22vh;
         bottom: 11.7vh;
@@ -876,11 +899,412 @@ footer{
         background-size: 100% 100%;
     }
 
-    .tituloAcompanas{
+    .tituloAcompanas {
         height: 26vh;
     }
 
-    .der{
+    .der {
         top: 5vh;
+    }
+}
+
+/* Esto es para mobile */
+
+@media (max-width: 414px) {
+
+    #backCont {
+        height: 535vh;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    .Domine {
+        width: 30vw;
+        font-size: 1.25vh;
+    }
+
+    .chapa {
+        width: 12vh;
+        height: 12vh;
+    }
+
+    /* .chapa2{
+        width: 5vh;
+        height: 5vh;
+    } */
+
+    .chapa3{
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .frasePrinc {
+        right: 0;
+        bottom: -15vh;
+    }
+
+    #sec1 {
+        height: 48vh;
+        background-size: 117% 77%;
+        background-position: 10%;
+    }
+
+    #sec2 {
+        bottom: 18vh;
+    }
+
+    /* #sec3{
+        bottom: 0vh;
+    } */
+
+    .nuestraHistoria {
+        height: 10vh;
+
+    }
+
+    .backHistoria1 {
+        height: 15vh;
+    }
+
+    .carousel {
+        top: 10vh;
+        position: absolute;
+        /* background-color: red; */
+    }
+
+    .carousel2 {
+        top: 57vh;
+        position: absolute;
+        /* background-color: red; */
+    }
+
+    .backWhite {
+        padding-top: 20vh;
+        /* height: 8vh; */
+    }
+
+    .leftText {
+        height: 5vh;
+        font-size: 1.1vh;
+    }
+
+    .rightText {
+        height: 5vh;
+        font-size: 1.1vh;
+    }
+
+    .trigo {
+        height: 6vh;
+    }
+
+    .backHistoria1 {
+        height: 17vh;
+    }
+
+    .backHistoria2 {
+        height: 16vh;
+    }
+
+    .backHistoria3 {
+        padding: 10vh 0 0 0;
+        height: 30vh;
+        justify-content: inherit;
+    }
+
+    .miniTrigo {
+        width: 8vw;
+    }
+
+    .annoCollage {
+        width: 40vw;
+        bottom: 33.5vh;
+    }
+
+    .trigoDec {
+        background-size: contain;
+    }
+
+    .celebremos {
+        height: 25vh;
+    }
+
+    .comoLlegarHeader {
+        height: 11vh;
+    }
+
+    .cartelCelebremos {
+        height: 15vh;
+        bottom: -5vh;
+    }
+
+    .tituloCartel {
+        margin-top: 6vh;
+        height: 6vh;
+    }
+
+    .cartelCont {
+        margin-top: 3vh;
+    }
+
+    .titleFinca {
+        left: 24vw;
+        top: 25vh;
+    }
+
+    .titleComoLlegar {
+        line-height: 6vh;
+        height: 20vh;
+        font-size: 3.1vh;
+        left: 30vw;
+        top: 2vh;
+    }
+
+    .videoComoLlegar {
+        width: 100vw;
+        top: 28vh;
+        right: 0;
+    }
+
+    .comoLlegarBack {
+        height: 98vh;
+    }
+
+    .location {
+        width: 80vw;
+        height: 15vh;
+        margin-top: 59vh;
+        margin-left: 11vw;
+        font-size: 1.7vh;
+    }
+
+    #sec4 {
+        height: 50vh;
+    }
+
+    .mapa {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .grandiaHeader {
+        height: 13vh;
+    }
+
+    .grandiaBack {
+        height: 60vh;
+    }
+
+    .brillar {
+        width: 35vw;
+        font-size: 1.2vh;
+    }
+
+    .recuerda {
+        width: 35vw;
+        font-size: 1.2vh;
+    }
+
+    .ojo {
+        font-size: 2.2vh;
+    }
+
+
+    .coloresRestrigidos {
+        height: 3.1vh;
+        width: 30vw;
+        font-size: 1.2vh;
+    }
+
+    .mujeres {
+        font-size: 1vh;
+    }
+
+    .hombres {
+        font-size: 1vh;
+    }
+
+    .recomendaciones {
+        height: 3.1vh;
+        width: 30vw;
+        font-size: 1.2vh;
+    }
+
+    .evitarZapatos {
+        width: 20vh;
+        font-size: 1.1vh;
+    }
+
+    .parejaCont {
+        height: 27vh;
+        width: 42vw;
+        left: 55vw;
+        top: 19vh;
+    }
+
+    .vestimentaMujer {
+        font-size: 1vh;
+        height: 10vh;
+    }
+
+    .vestimentaHombre {
+        font-size: 1vh;
+        height: 10vh;
+    }
+
+    #sec6 {
+        height: 40vh;
+        bottom: 12vh;
+    }
+
+    .sec6Back {
+        height: 60vh;
+    }
+
+    .izq {
+        height: 25vh;
+    }
+
+    .der {
+        top: 6vh;
+        height: 40vh;
+    }
+
+    .tituloAcompanas {
+        height: 3vh;
+        line-height: 2vh;
+    }
+
+    .form {
+        height: 25vh;
+        font-size: 1vh;
+    }
+
+    .divForm {
+        width: 100%;
+        height: 70%;
+    }
+
+    .titleNombre {
+        font-size: 1.3vh;
+    }
+
+    .inputConfirm {
+        width: 80%;
+        font-size: 1.3vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .confirmaAsis {
+        font-size: 0.7vh;
+    }
+
+    #confirmacion {
+        margin-bottom: 0.5vh;
+    }
+
+    #asistencia {
+        margin-bottom: 0.5vh;
+    }
+
+    .okButton {
+        width: 10vw;
+    }
+
+    #sec7 {
+        height: 50vh;
+        bottom: 12vh;
+    }
+
+    .tituloObsequios {
+        top: 3vh;
+        height: 6vh;
+        width: 30vw;
+        font-size: 1.1vh;
+    }
+
+    .obsequioCont {
+        height: 30vh;
+    }
+
+    .obsequioText {
+        top: 10vh;
+        height: 10vh;
+        font-size: 1vh;
+    }
+
+    .codigoQR {
+        top: 9vh;
+        height: 10vh;
+    }
+
+    footer {
+        width: 100%;
+        height: 6vh;
+        bottom: 0vh;
+    }
+
+    .vamoadarle {
+        font-size: 1.1vh;
+    }
+
+    .hashtags {
+        font-size: 1vh;
+    }
+
+    .backFlores {
+        width: 50vw;
+        height: 50vh;
+        top: 90vh;
+        right: 0;
+        position: absolute;
+    }
+
+    .photoC2{
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 375px) {
+    #backCont {
+        height: 557vh;
+    }
+
+    .backHistoria2 {
+        height: 25vh;
+    }
+
+    .backWhite {
+        padding-top: 29vh;
+        /* height: 8vh; */
+    }
+
+    .celebremos {
+        height: 31vh;
+    }
+
+    .titleComoLlegar {
+        line-height: 6vh;
+        height: 20vh;
+        font-size: 3.1vh;
+        left: 35vw;
+        top: 2vh;
+    }
+
+    .carousel2 {
+        top: 65vh;
+        position: absolute;
+        /* background-color: red; */
+    }
+
+    .codigoQR {
+        top: 7.5vh;
+        height: 11.2vh;
+    }
+
+    .backFlores{
+        top: 107vh;
     }
 }

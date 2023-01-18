@@ -119,3 +119,14 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (max-width: 414px) {
+    .annoFoto{
+        font-size: 1.8vh;
+    }
+
+    #fotoCont{
+        width: 50vw;
+    }
+    
+}
