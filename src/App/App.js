@@ -8,11 +8,10 @@ import { Slider } from '../components/Slider/Slider';
 function App() {
   const fotosHistoria = [2011, 2012, 2013, 2014, 2015];
   const fotosHistoria2 = [2016, 2017, 2018, 2019, 2020];
-  // const baseURL = "https://bodaserver.onrender.com/";
-  const baseURL = "http://localhost:3100/";
+  const baseURL = "https://bodaserver.onrender.com/";
+  // const baseURL = "http://localhost:3100/";
   const [csvData, setCsvData] = React.useState([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
   React.useEffect(() => {
-    console.log(csvData);
     if(csvData.length>1){
       document.querySelector('.csvlink').click();
       setCsvData([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
