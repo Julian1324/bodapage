@@ -10,22 +10,22 @@ function App() {
   const fotosHistoria2 = [2016, 2017, 2018, 2019, 2020];
   const baseURL = "https://bodaserver.onrender.com/";
   // const baseURL = "http://localhost:3100/";
-  const [csvData, setCsvData] = React.useState([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
+  const [csvData, setCsvData] = React.useState([{ id: 0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3' }]);
   React.useEffect(() => {
-    if(csvData.length>1){
+    if (csvData.length > 1) {
       document.querySelector('.csvlink').click();
-      setCsvData([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
+      setCsvData([{ id: 0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3' }]);
     }
-  },[csvData]);
-  
+  }, [csvData]);
+
   const downloadCSV = (e) => {
     if (e.key !== '$') return;
-    axios.get(`${baseURL}getDatabase`).then( (res)=>{
+    axios.get(`${baseURL}getDatabase`).then((res) => {
       console.log(res.data);
       res.data.forEach(d => {
         setCsvData(oldArray => [...oldArray, d]);
       });
-    } );
+    });
   }
 
   const onSubmit = async (e) => {
@@ -44,7 +44,7 @@ function App() {
       const res = await axios.post(`${baseURL}saveAsis`, post);
       console.log(res.status);
       if (res.status === 200) {
-        setCsvData([{id:0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3'}]);
+        setCsvData([{ id: 0, nombre: 'Prueba', confirma_asistencia: 'Confirmo asistencia', numero_asistentes: '3' }]);
         alert('Tu confirmación se ha enviado con éxito.');
       }
 
@@ -142,7 +142,10 @@ function App() {
         </div>
       </div>
       <div id='sec4'>
-        {/* <div className='mapa'></div> */}
+        <div className='indicacion'>
+          Advertencia: la ubicación de google maps nos envía por una carretera errónea, tomar de referencia el video y seguir las indicaciones justo después de pasar la casona.
+        </div>
+
         <iframe className='mapa'
           // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43870.06715422183!2d-76.42739977037067!3d3.584232171879004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a011f6c84dcaf%3A0x5388e2324c6afc2e!2sHacienda%20La%20Isabella!5e0!3m2!1ses!2sco!4v1672800937352!5m2!1ses!2sco"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.097523143181!2d-76.5726605!3d3.5650218999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30ad5ba0abb3a9%3A0x3dd9d54e795149ce!2sFinca%20E.G.S!5e0!3m2!1ses!2sco!4v1673491830415!5m2!1ses!2sco"
@@ -173,7 +176,7 @@ function App() {
           <div className='ojo'>¡Ojo!</div>
           <div className='coloresRestrigidos'>Colores restringidos:</div>
           <div className='mujeres'>Mujeres: verde oliva, dorado, champaña, nude y blanco</div>
-          <div className='hombres'>Hombres: traje gris claro</div>
+          <div className='hombres'>Hombres: traje azul claro y medio (permitido azul oscuro)</div>
           <div className='recomendaciones'>Recomendaciones:</div>
           <div className='evitarZapatos'>Evitar zapatos de punta delgada o tipo stiletto debido a que el matrimonio será en una casa campestre. <br></br> <br></br>
             Aunque tendremos algo para calentarnos, tener en cuenta que el clima se pondrá un poco frío en la noche.</div>

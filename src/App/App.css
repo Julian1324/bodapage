@@ -462,6 +462,7 @@ header {
 
 #sec4 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -470,6 +471,15 @@ header {
     bottom: 12vh;
     background-image: url('../assets/Recurso\ 32.png');
     background-size: cover;
+}
+
+.indicacion{
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 4vh;
+    font-size: 1.3vw;
+    font-family: Domine;
+    color: rgb(110, 68, 50);
 }
 
 .mapa {
@@ -1081,6 +1091,10 @@ footer {
 
     #sec4 {
         height: 50vh;
+    }
+
+    .indicacion{
+        font-size: 1.3vh;
     }
 
     .mapa {
